@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETCH</title>
+
+
+    <style>
+
+        h1{
+            font-family:'Courier New', Courier, monospace;
+            margin-top: 0;
+            background-image: linear-gradient(pink, white, pink);
+            padding: 0.2rem;
+        }
+        #container{
+            width: auto;
+            height: auto;
+            border: 3px solid black;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* gap: 1rem; */
+        }
+
+        #col{
+
+            display: flex;
+            flex-direction: row;
+            /* gap: 1rem; */
+        }
+
+       #d{
+        background-color: white;
+        height: 1.7rem;
+        width: 1.7rem;
+       border: 0.15rem solid black;
+
+       } 
+    </style>
 </head>
+
 <body>
-    <div></div>
+    
+    <div id="container">
+        <h1>Etch-a-sketch</h1>
+
+        <button id="btn">change Grid</button>
+    </div>
+    
 </body>
+<script src="main.js"></script>
+
 </html>
