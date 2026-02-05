@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etch-A-Sketch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Etch-A-Sketch</h1>
+
+<div id="controls">
+  <!-- <input type="color" id="colorPicker" value="#000000"> -->
+   <!-- Hidden color input -->
+<input type="color" id="colorPicker" value="#000000" style="display:none;">
+
+<!-- SVG color picker button -->
+<button id="colorBtn" title="Pick a color">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+    <path id="brushIcon" fill="#000000" d="M167.4 460.7c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50zm297.5-297.5c12.5-12.5 12.5-32.8 0-45.3l-99.6-99.6c-12.5-12.5-32.8-12.5-45.3 0L284.7 95.1l145 145 35.2-35.2zM115.1 396.7l224.6-224.6-35.2-35.2-224.6 224.6v35.2h35.2z"/>
+  </svg>
+</button>
+
+  <select id="mode">
+    <option value="color">Color</option>
+    <option value="rainbow">Rainbow</option>
+    <option value="eraser">Eraser</option>
+  </select>
+  <input type="number" id="gridSize" min="4" max="80" value="16">
+  <button id="btn">Create Grid</button>
+  <button id="resetBtn">Reset</button>
+</div>
+
+
+
+
+<div id="container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
